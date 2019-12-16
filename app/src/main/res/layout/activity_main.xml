@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="system.mil.sinauaksarajawa.MainActivity"
+    android:background="@drawable/bg">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:background="@drawable/banner" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:adjustViewBounds="true"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:adjustViewBounds="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ha"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:nestedScrollingEnabled="false"
+                    android:onClick="sinauHa"
+                    android:adjustViewBounds="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/na"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauNa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ca"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauCa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ra"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauRa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ka"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauKa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:weightSum="100"
+                android:adjustViewBounds="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/da"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauDa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ta"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauTa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sa"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauSa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wa"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauWa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/la"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauLa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:weightSum="100"
+                android:adjustViewBounds="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pa"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauPa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dha"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauDha" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ja"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauJa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ya"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauYa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nya"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauNya" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:weightSum="100"
+                android:adjustViewBounds="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ma"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauMa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ga"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauGa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ba"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauBa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tha"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauTha" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nga"
+                    android:layout_weight="20"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="sinauNga" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView26"
+        android:src="@drawable/mascot"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView27"
+        android:src="@drawable/papan_sinau"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="-20dp"
+        android:rotation="-10"
+        />
+
+
+
+</RelativeLayout>
+
+

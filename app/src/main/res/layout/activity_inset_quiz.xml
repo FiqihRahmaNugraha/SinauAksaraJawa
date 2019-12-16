@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="system.mil.sinauaksarajawa.MainActivity"
+    android:background="@drawable/bg">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView26"
+        android:src="@drawable/mascot"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView27"
+        android:src="@drawable/papan_kuis"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="-20dp"
+        android:rotation="-10"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:weightSum="100"
+        android:visibility="visible"
+        android:id="@+id/paparescaradas">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:background="@drawable/banner" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:adjustViewBounds="true"
+            android:paddingTop="20dp"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/gambar_soal"
+                    android:layout_weight="40"
+                    android:src="@drawable/gambarsoal1" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="&lt;&lt; soal >>"
+                        android:id="@+id/teks_soal"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="#BBFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="A. Jawaban A"
+                        android:id="@+id/jawaban_a"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="30dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:onClick="takeJawabanA" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="B. Jawaban B"
+                        android:id="@+id/jawaban_b"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:onClick="takeJawabanB" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="C. Jawaban C"
+                        android:id="@+id/jawaban_c"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:onClick="takeJawabanC" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@drawable/bg"
+        android:id="@+id/jawabanbenar"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:weightSum="0">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:id="@+id/imageView7"
+                android:src="@drawable/rightsign"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Jawabanmu Bener!"
+                android:id="@+id/textView8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="+10"
+                android:id="@+id/textView9"
+                android:layout_gravity="center_horizontal"
+                android:textSize="80dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="#008be1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView9"
+                    android:layout_gravity="center"
+                    android:src="@drawable/start_icon"
+                    android:onClick="nextSoal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@drawable/bg"
+        android:id="@+id/jawabansalah"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:weightSum="0" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:id="@+id/imageView8"
+                android:src="@drawable/wrongsign"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Jawabanmu Salah :("
+                android:id="@+id/textView10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="-10"
+                android:id="@+id/textView11"
+                android:layout_gravity="center_horizontal"
+                android:textSize="80dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="#be0003" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Jawaban sing bener:"
+                android:id="@+id/textView12"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/jawabansingbener"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView10"
+                    android:layout_gravity="center"
+                    android:src="@drawable/start_icon"
+                    android:onClick="nextSoal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@drawable/bg"
+        android:id="@+id/kuisentek"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:weightSum="0" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:id="@+id/imageView11"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="kuis e uwis rampung.. :)"
+                android:id="@+id/textView13"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="bijimu:"
+                android:id="@+id/textView15"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="-10"
+                android:id="@+id/totalbiji"
+                android:layout_gravity="center_horizontal"
+                android:textSize="80dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="#008fdd" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView12"
+                    android:layout_gravity="center"
+                    android:src="@drawable/start_icon"
+                    android:onClick="kuisrampung" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
